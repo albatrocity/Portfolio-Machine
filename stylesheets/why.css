@@ -1,0 +1,58 @@
+body {
+  font-family:
+  	"Bookman Old Style",
+    "Serifa BT",
+    "URW Bookman L",
+    "itc bookman";  
+  font-size: 12px;
+  background: #fcfcfc;  
+}
+
+#showcase {
+  width: 300px;
+  height: 344px;  
+  float: left;
+  background: #fff;
+  border: 1px dashed #999;
+  overflow: auto;
+}
+#showcase #spotlight {
+  background: #eee;
+  padding: 10px;
+  min-height: 324px;
+}
+
+.roles {
+  margin-top: 8px;
+}
+.roles span {
+  display: block;
+  width: 24px;
+  height: 18px;
+  text-indent: -999em;
+  background-repeat: no-repeat;
+  float: left;
+  margin-right: 5px;
+}
+
+.TE {
+  background-image: url(../images/roles/tracking.png);
+}
+.ME {
+  background-image: url(../images/roles/mixing.png);
+}
+.M {
+  background-image: url(../images/roles/musician.png);
+}
+.P {
+  background-image: url(../images/roles/producer.png);
+}
+.D {
+  background-image: url(../images/roles/designer.png);
+}
+.F {
+  background-image: url(../images/roles/front-end.png);
+}
+.A {
+  background-image: url(../images/roles/artist.png);
+}
