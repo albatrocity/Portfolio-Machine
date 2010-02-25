@@ -14,8 +14,10 @@ if(go){
 }
 
 $(function() {
+
   
-  cycle();
+  
+  // cycle();
 
   $('.showoff li').hover(
     function() {
@@ -26,33 +28,33 @@ $(function() {
     }
   );
 
-  $('.showoff li').live('click', function() {
-    go=false;
-    clearTimeout(time);
-    var fullName = $(this).attr('id') + '_full'
-    $('.showoff li').removeClass('active');
-    $(this).addClass('active');
-    $('.showoff li[class!=active]').animate({opacity: .2}, 200);
-    $(this).animate({opacity: 1}, 200);
-    $('#spotlight').fadeOut('fast', function() {
-      $(this).html($('#' + fullName).html());
-      $('<a href="#" id="return">return</a>').prependTo('#spotlight');
-    }).fadeIn();
-  });
-  
-  $('a#return').live('click', function() {
-    cycle();
-    $('#spotlight').fadeOut();
-    $('.showoff li').animate({opacity: 1}, 200).removeClass('active');
-    return false;
-    go=true;
-  });
-  
-  $('#viewall').click(function() {
-    var listHeight = 130 * $('ul.showoff li').size()
-    $('ul.showoff').animate({height:listHeight}, 200, function() {
-      $(this).css('overflow', 'visible');
-    });
-  });
+  // $('.showoff li').live('click', function() {
+  //    go=false;
+  //    clearTimeout(time);
+  //    var fullName = $(this).attr('id') + '_full'
+  //    $('.showoff li').removeClass('active');
+  //    $(this).addClass('active');
+  //    $('.showoff li[class!=active]').animate({opacity: .2}, 200);
+  //    $(this).animate({opacity: 1}, 200);
+  //    $('#spotlight').fadeOut('fast', function() {
+  //      $(this).html($('#' + fullName).html());
+  //      $('<a href="#" id="return">return</a>').prependTo('#spotlight');
+  //    }).fadeIn();
+  //  });
+  //  
+  //  $('a#return').live('click', function() {
+  //    cycle();
+  //    $('#spotlight').fadeOut();
+  //    $('.showoff li').animate({opacity: 1}, 200).removeClass('active');
+  //    return false;
+  //    go=true;
+  //  });
+  //  
+  //  $('#viewall').click(function() {
+  //    var listHeight = 130 * $('ul.showoff li').size()
+  //    $('ul.showoff').animate({height:listHeight}, 200, function() {
+  //      $(this).css('overflow', 'visible');
+  //    });
+  //  });
   
 });
