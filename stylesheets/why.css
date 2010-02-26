@@ -5,33 +5,56 @@ body {
     "URW Bookman L",
     "itc bookman";  
   font-size: 12px;
-  background: #fcfcfc;  
+  background: #999;  
 }
-
+h1 {
+  color: #fff;
+  font-size: 5em;
+  margin: .1em 0;
+  font-family: 'Action Jackson'; 
+}
+#screen {
+  width: 320px;
+  height: 350px; 
+  position: absolute; 
+  background: #ccc;
+  display: none;  
+}
 #showcase {
-  width: 300px;
-  height: 344px;  
+  background: #fff url(../images/white_noise.gif);
+  width: 320px;
+  height: 350px;  
   float: left;
-  background: #fff;
-  border: 1px dashed #999;
   overflow: auto;
 }
 #showcase #spotlight {
-  background: #eee;
-  padding: 10px;
-  min-height: 324px;
+  padding: 30px 30px;
+  min-height: 290px;
+  position: relative;
+  z-index: 20;
+  /*background: #ccc;*/
+}
+
+#showcase #screen-overlay {
+  height: 350px;
+  width: 320px;
+  z-index: 0;
+  position: absolute;
+  background-image: url(../images/screen-overlay.png);
 }
 
 .roles {
-  margin-top: 8px;
+  margin-top: 5px;
+  padding: 4px 20px;	
+  background: rgba(245,241,233,0.23);
 }
 .roles span {
-  display: block;
+  clear: both;
+  display: inline-block;
   width: 24px;
   height: 18px;
   text-indent: -999em;
   background-repeat: no-repeat;
-  float: left;
   margin-right: 5px;
 }
 
@@ -55,4 +78,8 @@ body {
 }
 .A {
   background-image: url(../images/roles/artist.png);
+}
+
+.clear {
+  clear: both;
 }
