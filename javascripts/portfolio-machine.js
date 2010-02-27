@@ -24,7 +24,7 @@ $(function() {
       go=false;
     },
     function() {
-      if (!$('ul.showoff').hasClass('expanded')) {
+      if (!$('ul.showoff').parent('.shelf').hasClass('expanded')) {
         go=true;
       }
     }
@@ -43,7 +43,7 @@ $(function() {
 
       current_element = $(this);
       var description = '';
-      if ($(this).parent().parent().attr('id') == 'music') {
+      if ($(this).parent().parent().parent().attr('id') == 'music') {
         project = _.select(audio_projects, function (project) { return project.css == current_element.attr('id'); })[0];
       } else {
         project = _.select(web_projects, function (project) { return project.css == current_element.attr('id'); })[0];
@@ -72,7 +72,13 @@ $(function() {
     var audioHeight = $('ul.showoff li').outerHeight() * $('#music ul.showoff li').size();
     var webHeight = $('ul.showoff li').outerHeight() * $('#web ul.showoff li').size();
     var tallestHeight = Math.max(audioHeight, webHeight);
-    $('.shelf').addClass('expanded').animate({height:tallestHeight + 305}, 1000);
+    $('.shelf').css('overflow', 'visible').addClass('expanded').animate({height:tallestHeight}, 1000);
+    $('ul.showoff').animate({top:0}, 1000);
+    $('#web, #music').animate({height:tallestHeight + $('h2.section').outerHeight() }, 1000);    
+    $('#machine').animate({height: tallestHeight + $('h2.section').outerHeight() }, 1000);
+    $('#showcase').scrollFollow({easing: 'easeOutQuad', speed: 300, delay: 50});
+    return false
   });
+
 
 });

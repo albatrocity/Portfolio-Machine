@@ -65,9 +65,9 @@ p a:hover {
   width: 320px;
   height: 350px;  
   float: left;
+  position: relative;
   overflow: auto;
-  border-bottom: 2px groove #654c18;
-  border-top: 2px ridge #654c18;  
+  border-top: 2px ridge #654c18;   
 }
 #showcase p {
   color: #eee;
@@ -107,6 +107,10 @@ p a:hover {
   background-image: url(../images/screen-overlay.png);
   border-left: 1px solid #1e1102;  
   border-right: 1px solid ;
+}
+
+#lower {
+  border-top: 2px groove #5d4922;  
 }
 
 #legend {

@@ -8,8 +8,9 @@
   <link rel="stylesheet" href="stylesheets/why.css" type="text/css" media="screen" title="no title" charset="utf-8" />
   <script type="text/javascript" charset="utf-8" src="javascripts/jquery.js"></script>
   <script type="text/javascript" charset="utf-8" src="javascripts/plugins/jquery-ui.js"></script>
+  <script type="text/javascript" charset="utf-8" src="javascripts/plugins/jquery.scrollfollow.js"></script>
   <script type="text/javascript" charset="utf-8" src="javascripts/plugins/jquery.wait.js"></script>
-  <script type="text/javascript" charset="utf-8" src="javascripts/plugins/jquery.defuscate.js"></script>  
+  <script type="text/javascript" charset="utf-8" src="javascripts/plugins/jquery.defuscate.js"></script>
   <script type="text/javascript" charset="utf-8" src="javascripts/plugins/jquery.underscore.js"></script>
   <script type="text/javascript" charset="utf-8" src="javascripts/portfolio.js"></script>
   <script type="text/javascript" charset="utf-8" src="javascripts/templates.js"></script>
@@ -37,7 +38,6 @@
         </div>
       </div>
     </div>
-
     <div id="showcase">
       <div id="screen"></div>
       <div id="screen-overlay"></div>
@@ -46,28 +46,34 @@
     <div id="bucket" style="display:none">
     </div>
     <div class="clear"></div>
-    <div id="legend">
-      <h3>Legend</h3>
-      <ul id="web_roles">
-        <li><img src="images/roles/artist.png" alt="Artist" /> Artist</li>
-        <li><img src="images/roles/designer.png" alt="Designer" /> Designer</li>
-        <li><img src="images/roles/designer.png" alt="Front End Developer" /> Front End Developer</li>
-      </ul>
-      <ul id="music_roles">
-        <li><img src="images/roles/musician.png" alt="Musician" /> Musician</li>
-        <li><img src="images/roles/producer.png" alt="Producer" /> Producer</li>
-        <li><img src="images/roles/tracking.png" alt="Tracking Engineer" /> Tracking Engineer</li>
-        <li><img src="images/roles/mixing.png" alt="Mixing Engineer" /> Mixing Engineer</li>
-      </ul>
+
+    <div id="lower">
+      <div id="legend">
+        <h3>Legend</h3>
+        <ul id="web_roles">
+          <li><img src="images/roles/artist.png" alt="Artist" /> Artist</li>
+          <li><img src="images/roles/designer.png" alt="Designer" /> Designer</li>
+          <li><img src="images/roles/designer.png" alt="Front End Developer" /> Front End Developer</li>
+        </ul>
+        <ul id="music_roles">
+          <li><img src="images/roles/musician.png" alt="Musician" /> Musician</li>
+          <li><img src="images/roles/producer.png" alt="Producer" /> Producer</li>
+          <li><img src="images/roles/tracking.png" alt="Tracking Engineer" /> Tracking Engineer</li>
+          <li><img src="images/roles/mixing.png" alt="Mixing Engineer" /> Mixing Engineer</li>
+        </ul>
+      </div>
+      <div id="contact">
+        <h3>Colophon</h3>
+        <p>This is a collection of choice works produced by Ross Brown. If you'd like to contact him, send an email to ross(at)rossisbrown.com. You might even try writing in third person, it's fun.</p>
+      </div>
+      <div class="clear"></div>
     </div>
-    <div id="contact">
-      <h3>Colophon</h3>
-      <p>This is a collection of choice works produced by Ross Brown. If you'd like to contact him, send an email to ross(at)rossisbrown.com. You might even try writing in third person, it's fun.</p>
-    </div>
-    <div class="clear"></div>
+    <a id="viewall" href="#">VIEW ALL</a>
   </div>
   <script type="text/javascript" charset="utf-8">
+  $(function() {
     $('p').defuscate();
+  })
   </script>
 </body>
 
