@@ -5,7 +5,8 @@ body {
     "URW Bookman L",
     "itc bookman";  
   font-size: 12px;
-  background: #999;  
+  background: #999; 
+  margin: 0; 
 }
 h1 {
   color: #fff;
@@ -13,12 +14,51 @@ h1 {
   margin: .1em 0;
   font-family: 'Action Jackson'; 
 }
+h2, h3 {
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);    
+}
+h2 {
+  font-size: 1.5em;
+}
+h3 {
+  font-size: 1.3em;
+  margin: .8em 0;
+}
+h2 a {
+  color: #fff;
+  text-decoration: none;
+}
+h2 a:hover {
+  text-shadow:0 2px 2px #333 ;
+}
+p {
+  color: #fff;
+  text-shadow: 0 2px 1px #000;
+  font-size: 1.2em;
+}
+
+p a {
+  color: #eee;
+  text-decoration: none;
+  font-weight: bold;
+}
+p a:hover {
+  border-bottom: 1px solid #999;  
+}
+
 #screen {
   width: 320px;
   height: 350px; 
   position: absolute; 
-  background: #ccc;
+  background: #999;
   display: none;  
+}
+
+#center {
+  width: 960px;
+  padding: 20px 0;
+  background-image: url(../images/wood.jpg);
 }
 #showcase {
   background: #fff url(../images/white_noise.gif);
@@ -26,27 +66,86 @@ h1 {
   height: 350px;  
   float: left;
   overflow: auto;
+  border-bottom: 2px groove #654c18;
+  border-top: 2px ridge #654c18;  
+}
+#showcase p {
+  color: #eee;
+  text-shadow: none;
+  margin-top: 0;
+}
+
+#spotlight span.date {
+  color: #666;
+  font-size: 1.3em;
+  margin: .2em 0;
+  display: block;
+}
+
+#contact {
+  width: 300px;
+  float: left;
+  padding: 0 10px;
 }
 #showcase #spotlight {
-  padding: 30px 30px;
-  min-height: 290px;
+  padding: 0 30px;
+  margin-top: 20px;
+  height: 300px;
   position: relative;
   z-index: 20;
-  /*background: #ccc;*/
+  overflow: auto;
 }
-
+#showcase h2 {
+  margin: 10px 0 10px 0;
+}
 #showcase #screen-overlay {
   height: 350px;
-  width: 320px;
+  width: 319px;
   z-index: 0;
+  margin-left: -1px;
   position: absolute;
   background-image: url(../images/screen-overlay.png);
+  border-left: 1px solid #1e1102;  
+  border-right: 1px solid ;
 }
 
+#legend {
+width: 640px;
+margin: 0 ;
+float: left;
+}
+
+#legend h3 {
+  margin: .8em 30px;
+}
+
+#legend ul {
+  display: inline-block;
+  vertical-align: top;
+  list-style: none; 
+  color: #fff;
+  font-weight: bold;
+  padding: 0 10px;
+  margin: 0 23px;
+  width: 250px;
+  background: rgba(0,0,0,.6);
+  -webkit-border-radius:10px;-moz-border-radius:20px;
+border-top: 4px ridge rgba(63,43,8,0.39);
+border-bottom: 2px groove rgba(174,118,30,0.39);
+border-left: 1px solid rgba(174,118,30,0.39);
+border-right: 1px solid rgba(174,118,30,0.39);  
+}
+#legend ul li {
+  margin:.8em 0;
+}
+#legend ul li img {
+  vertical-align: middle;
+  margin-right: 5px;
+}
 .roles {
-  margin-top: 5px;
+  margin-top: 2px;
   padding: 4px 20px;	
-  background: rgba(245,241,233,0.23);
+  /*background: rgba(245,241,233,0);*/
 }
 .roles span {
   clear: both;

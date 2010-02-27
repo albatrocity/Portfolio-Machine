@@ -19,6 +19,8 @@
   height: 350px;
   width: 640px;
   float: left;
+  border-bottom: 2px groove #5d4922;
+  border-top: 2px ridge #654c18;  
 }
 
 #web, #music {
@@ -41,11 +43,13 @@ h2.section {
   height: 1.3em;
   margin: 0;
   background: #5993cf url(../images/h2_bg.png);
-  color: #fff;
   display: block;
   border-right: 2px groove #75b0ee;
   border-bottom: 1px solid #3d84cd;
-  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  position: relative;
+  z-index: 50;  
+  -webkit-box-shadow:0 6px 8px #000;
+ -moz-box-shadow: #000 0 6px 8px;  
 }
 .shelf {
   height: 306px;
@@ -56,10 +60,12 @@ ul.showoff li {
   list-style: none;
   margin: 0;
   clear: both;
-  height: 104px;
+  height: 105px;
   padding: 99px 0 0 0 ;
   cursor: pointer;
   background-image: url(../images/shelf.png);
+  -webkit-box-shadow:0 0 8px rgba(0,0,0,.6);  
+ -moz-box-shadow: #000 0 0 8px;  
 }
 ul.showoff img.preview {
   width: 100px;
@@ -78,12 +84,34 @@ ul.showoff .details {
 ul.showoff span.date {
   font-size: 14px;
 }
-ul.showoff h3{
+ul.showoff h4{
   font-family: 'Rufscript';
   margin: 0;
   font-size: 20px;
   line-height: 1.1em;
-  font-weight: ;
+  color: #000;
+  text-shadow: none;
+}
+
+#spotlight img.preview {
+  text-align: center;
+}
+
+a#eject {
+  border: 4px dashed rgba(256,256,256,.3);
+  text-align: center;
+  overflow: hidden;
+  font-size: 18px;
+  padding: 20px 30px;
+  -webkit-border-radius:10px;  -moz-border-radius: 10px;
+  display: block;
+  position: relative;
+  margin: 0 auto -70px auto;
+  width: 200px;
+  height: 22px;
+  font-family: 'Rufscript';
+  color: #fff;
+  text-decoration: none;
 }
 
 br.clear {

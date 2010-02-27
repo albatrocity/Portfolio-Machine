@@ -33,11 +33,12 @@ $(function() {
   $('.showoff li').live('click', function() {
     if (!$(this).hasClass('active')) {
       go=false;
+      $('a#eject').fadeOut();
       $('#screen').fadeIn(600);
       clearTimeout(time);
       $('.showoff li.active .details').animate({left: 0}, 500).parent('li').removeClass('active');
-      $(this).addClass('active').children('.details').animate({left: 600}, 500);
-      $('.showoff li[class!=active] .details').animate({opacity: .5}, 200);            
+      $(this).addClass('active').children('.details').animate({left: 600}, 600);
+      $('.showoff li[class!=active] .details').animate({opacity: .5}, 200);
       $(this).animate({opacity: 1}, 500);
 
       current_element = $(this);
@@ -50,14 +51,15 @@ $(function() {
 
       $('#spotlight').fadeOut('fast', function() {
         $(this).html(project_details_template(project));
-        $('<a href="#" id="eject">eject</a>').prependTo('#spotlight');
+        $('<a href="#" id="eject">return to shelf</a>').prependTo('ul.showoff li.active');
       }).fadeIn(600);
     }
   });
 
   $('a#eject').live('click', function() {
+    $(this).fadeOut();
     cycle();
-    $('.showoff li .details').animate({opacity: 1}, 200).removeClass('active');    
+    $('.showoff li .details').animate({opacity: 1}, 200).removeClass('active');
     $('.showoff li.active .details').animate({left: 0}, 500).parent('li').removeClass('active');
     $('#screen').fadeOut(300);
     $('#spotlight').fadeOut();
