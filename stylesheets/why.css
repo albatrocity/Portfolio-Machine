@@ -1,3 +1,4 @@
+
 body {
   font-family:
   	"Bookman Old Style",
@@ -5,7 +6,7 @@ body {
     "URW Bookman L",
     "itc bookman";  
   font-size: 12px;
-  background: #999; 
+  background: #999 url(../images/texture_bg.png); 
   margin: 0; 
 }
 h1 {
@@ -57,17 +58,47 @@ p a:hover {
   display: none;  
 }
 
+#upper {
+  padding-top: 20px;
+  border-top: 3px solid #395066;
+  border-left: 1px solid #89acd1; 
+  border-right: 1px solid #89acd1;       
+}
+
 #center {
-  width: 960px;
-  padding: 20px 0;
+  width: 962px;
+  padding:0;
   background-image: url(../images/wood.jpg);
   -webkit-border-image: url(../images/h2_bg.png) 40 1 round round;
   -moz-border-image: url(../images/h2_bg.png) 45 2 round round;
   border: 20px solid #000;
   background-color: #5d95cf;
   margin: 0 auto;
-  -webkit-box-shadow:0 2px 5px rgba(0,0,0,.5);  
+  -webkit-box-shadow:0 -2px 15px rgba(0,0,0,.5);  
   -moz-box-shadow:0 2px 5px rgba(0,0,0,.5);   
+  position: relative;
+  z-index: 10;
+}
+
+#instructions {
+  font-family: "Courier New", Courier, mono;
+  background-image: url(../images/paper.png);
+  width: 600px;
+  height: 4.5em;
+  margin: 0 auto -10px auto;
+  padding: 30px 50px 1em 50px;
+  position: relative;
+  z-index: 1;
+   -webkit-transform: rotate(2deg);  
+}
+#instructions h4 {
+  font-size: 16px;
+  margin: .5em 0 0 0;
+}
+#instructions p {
+  color: #000;
+  text-shadow: none;
+  margin: .5em 0;
 }
 #showcase {
   background: #fff url(../images/white_noise.gif);
@@ -77,7 +108,7 @@ p a:hover {
   position: relative;
   overflow: auto;
   border-top: 2px ridge #654c18;   
-  -webkit-box-shadow:0 0 10px rgba(0,0,0,.7);    
+  -webkit-box-shadow:0 0 10px rgba(0,0,0,.7);
   -moz-box-shadow:0 0 10px rgba(0,0,0,.7);      
 }
 #showcase p {
@@ -122,10 +153,14 @@ p a:hover {
 
 #lower {
   border-top: 2px groove #5d4922;
+  border-bottom: 2px solid #95bbe3;  
+  padding-bottom: 20px; 
+  border-left: 1px solid #89acd1;  
+  border-right: 1px solid #89acd1;    
 }
 
 #legend {
-width: 640px;
+width: 638px;
 margin: 0 ;
 float: left;
 }
@@ -134,14 +169,14 @@ float: left;
   margin: .8em 30px;
 }
 
-#legend ul {
+#legend ul, a#viewall {
   display: inline-block;
   vertical-align: top;
   list-style: none; 
   color: #fff;
   font-weight: bold;
   padding: 0 10px;
-  margin: 0 23px;
+  margin: 0 22px;
   width: 250px;
   background: rgba(0,0,0,.6);
   -webkit-border-radius:10px;-moz-border-radius:20px;
@@ -157,11 +192,27 @@ border-right: 1px solid rgba(174,118,30,0.39);
   vertical-align: middle;
   margin-right: 5px;
 }
+
+a#viewall {
+  display: block;
+  width: 5.5em;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  position: relative;
+  margin-top:-2.3em;
+  float: right;
+  border: none;
+}
+a#viewall:hover {
+  background: rgba(0,0,0, .9);
+}
 .roles {
   margin-top: 2px;
   padding: 4px 20px;	
   /*background: rgba(245,241,233,0);*/
 }
+
 .roles span {
   clear: both;
   display: inline-block;

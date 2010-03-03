@@ -73,6 +73,7 @@ $(function() {
     var webHeight = $('ul.showoff li').outerHeight() * $('#web ul.showoff li').size();
     var tallestHeight = Math.max(audioHeight, webHeight);
     $('.shelf').css('overflow', 'visible').addClass('expanded').animate({height:tallestHeight}, 1000);
+    $('#machine').css('overflow', 'visible');
     $('ul.showoff').animate({top:0}, 1000);
     $('#web, #music').animate({height:tallestHeight + $('h2.section').outerHeight() }, 1000);    
     $('#machine').animate({height: tallestHeight + $('h2.section').outerHeight() }, 1000);

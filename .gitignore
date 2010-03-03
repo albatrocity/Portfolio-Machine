@@ -1,2 +1,4 @@
 *.drawit
 *.esproj
+_support
+_support/*

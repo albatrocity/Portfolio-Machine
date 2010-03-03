@@ -9,18 +9,14 @@
 	src: url('../fonts/action-jackson.eot');
 	src: local(''), url('../fonts/action-jackson.woff') format('woff'), url('../fonts/action-jackson.ttf') format('truetype'), url('http://kernest.com/embed/action-jackson');
 }
-@font-face {
-	font-family: 'Takraf Block';
-	src: url('../fonts/takraf-block.eot');
-	src: local(''), url('../fonts/takraf-block.woff') format('woff'), url('../fonts/takraf-block.otf') format('truetype'), url('http://kernest.com/embed/takraf-block');
-}
 
 #machine {
   height: 350px;
   width: 640px;
   float: left;
+  overflow: hidden;
   border-top: 2px ridge #654c18;  
-  -webkit-box-shadow:10px 0 5px rgba(256,256,256,.5);
+  -webkit-box-shadow:2px 0 2px rgba(0,0,0,.5);
 }
 
 #web, #music {
@@ -28,7 +24,9 @@
   float: left;
   overflow: hidden;  
 }
-
+#music {
+  width: 319px;  
+}
 ul.showoff {
   margin: 0;
   padding: 0;

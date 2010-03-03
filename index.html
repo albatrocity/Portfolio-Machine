@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="stylesheets/fonts.css" type="text/css" media="screen" title="no title" charset="utf-8" />
   <link rel="stylesheet" href="stylesheets/portfolio-machine.css" type="text/css" media="screen" title="no title" charset="utf-8" />
   <link rel="stylesheet" href="stylesheets/why.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+  <link href="http://kernest.com/whyisrossbrown-com.css" media="screen" rel="stylesheet" type="text/css" />  
   <script type="text/javascript" charset="utf-8" src="javascripts/jquery.js"></script>
   <script type="text/javascript" charset="utf-8" src="javascripts/plugins/jquery-ui.js"></script>
   <script type="text/javascript" charset="utf-8" src="javascripts/plugins/jquery.scrollfollow.js"></script>
@@ -19,48 +20,55 @@
 <body>
   <div id="header">
     <h1>Why Is Ross Brown?</h1>
+    <div id="instructions">
+      <h4>INSTRUCTIONS:</h4>
+      <p>Select a project VHS (with your mouse pointer) below to view more details.</p>
+      <p>Two AA batteries (not included) are required to run this application.</p>
+    </div>
+    <a href="#" id="viewall">View All</a>    
   </div>
   <div id="center">
-    <div id="machine">
-      <div id="music">
-        <h2 class="section">Music</h2>
-        <div class="shelf">
-          <ul class="showoff">
-          </ul>
+    <div id="upper">
+      <div id="machine">
+        <div id="music">
+          <h2 class="section">Music</h2>
+          <div class="shelf">
+            <ul class="showoff">
+            </ul>
+          </div>
+        </div>
+        <div id="web">
+          <h2 class="section">Web</h2>
+          <div class="shelf">
+            <ul class="showoff">
+            </ul>
+          </div>
         </div>
       </div>
-
-      <div id="web">
-        <h2 class="section">Web</h2>
-        <div class="shelf">
-          <ul class="showoff">
-          </ul>
-        </div>
+      <div id="showcase">
+        <div id="screen"></div>
+        <div id="screen-overlay"></div>
+        <div id="spotlight" style="display: none"></div>
       </div>
+      <div id="bucket" style="display:none">
+      </div>
+      <div class="clear"></div>
     </div>
-    <div id="showcase">
-      <div id="screen"></div>
-      <div id="screen-overlay"></div>
-      <div id="spotlight" style="display: none"></div>
-    </div>
-    <div id="bucket" style="display:none">
-    </div>
-    <div class="clear"></div>
 
     <div id="lower">
       <div id="legend">
         <h3>Legend</h3>
-        <ul id="web_roles">
-          <li><img src="images/roles/artist.png" alt="Artist" /> Artist</li>
-          <li><img src="images/roles/designer.png" alt="Designer" /> Designer</li>
-          <li><img src="images/roles/front-end.png" alt="Front End Developer" /> Front End Developer</li>
-        </ul>
         <ul id="music_roles">
           <li><img src="images/roles/musician.png" alt="Musician" /> Musician</li>
           <li><img src="images/roles/producer.png" alt="Producer" /> Producer</li>
           <li><img src="images/roles/tracking.png" alt="Tracking Engineer" /> Tracking Engineer</li>
           <li><img src="images/roles/mixing.png" alt="Mixing Engineer" /> Mixing Engineer</li>
         </ul>
+        <ul id="web_roles">
+          <li><img src="images/roles/artist.png" alt="Artist" /> Artist</li>
+          <li><img src="images/roles/designer.png" alt="Designer" /> Designer</li>
+          <li><img src="images/roles/front-end.png" alt="Front End Developer" /> Front End Developer</li>
+        </ul>        
       </div>
       <div id="contact">
         <h3>Colophon</h3>
@@ -68,7 +76,6 @@
       </div>
       <div class="clear"></div>
     </div>
-    <a id="viewall" href="#">VIEW ALL</a>
   </div>
   <script type="text/javascript" charset="utf-8">
   $(function() {
