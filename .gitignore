@@ -2,3 +2,5 @@
 *.esproj
 _support
 _support/*
+fonts/*
+fonts
