@@ -9,10 +9,12 @@ body {
   margin: 0; 
 }
 h1 {
-  color: #fff;
+  color: #f5f1e9;
   font-size: 5em;
   margin: .1em 0;
   font-family: 'Action Jackson'; 
+  text-align: center;
+  text-shadow: 0 1px 3px #000;
 }
 h2, h3 {
   color: #fff;
@@ -59,6 +61,13 @@ p a:hover {
   width: 960px;
   padding: 20px 0;
   background-image: url(../images/wood.jpg);
+  -webkit-border-image: url(../images/h2_bg.png) 40 1 round round;
+  -moz-border-image: url(../images/h2_bg.png) 45 2 round round;
+  border: 20px solid #000;
+  background-color: #5d95cf;
+  margin: 0 auto;
+  -webkit-box-shadow:0 2px 5px rgba(0,0,0,.5);  
+  -moz-box-shadow:0 2px 5px rgba(0,0,0,.5);   
 }
 #showcase {
   background: #fff url(../images/white_noise.gif);
@@ -68,6 +77,8 @@ p a:hover {
   position: relative;
   overflow: auto;
   border-top: 2px ridge #654c18;   
+  -webkit-box-shadow:0 0 10px rgba(0,0,0,.7);    
+  -moz-box-shadow:0 0 10px rgba(0,0,0,.7);      
 }
 #showcase p {
   color: #eee;
@@ -110,7 +121,7 @@ p a:hover {
 }
 
 #lower {
-  border-top: 2px groove #5d4922;  
+  border-top: 2px groove #5d4922;
 }
 
 #legend {
