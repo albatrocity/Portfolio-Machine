@@ -74,10 +74,8 @@ p a:hover {
 #center {
   width: 962px;
   padding:0;
-  -webkit-border-image: url(../images/border-image.png) 20 20 20 20 round stretch;
-  -moz-border-image: url(../images/border-image.png) 20 20 20 20 round stretch;
-  border-width: 20px 20px 20px 20px;
-  -webkit-border-radius:20px;-moz-border-radius:20px;
+  border: 25px solid #5a92cb;
+  -webkit-border-radius:20px;  -moz-border-radius:20px;
   margin: 0 auto;
   -webkit-box-shadow:0 -2px 15px rgba(0,0,0,.5);  
   -moz-box-shadow:0 -2px 15px rgba(0,0,0,.5);   
