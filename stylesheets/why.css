@@ -60,22 +60,27 @@ p a:hover {
 
 #upper {
   padding-top: 20px;
-  border-top: 3px solid #395066;
+  border-top: 4px solid #415b74;
   border-left: 1px solid #89acd1; 
-  border-right: 1px solid #89acd1;       
+  border-right: 1px solid #89acd1;   
+  background-image: url(../images/wood.jpg);      
+}
+
+#header {
+  width: 960px;
+  margin: 0 auto;
 }
 
 #center {
   width: 962px;
   padding:0;
-  background-image: url(../images/wood.jpg);
-  -webkit-border-image: url(../images/h2_bg.png) 40 1 round round;
-  -moz-border-image: url(../images/h2_bg.png) 45 2 round round;
-  border: 20px solid #000;
-  background-color: #5d95cf;
+  -webkit-border-image: url(../images/border-image.png) 20 20 20 20 round stretch;
+  -moz-border-image: url(../images/border-image.png) 20 20 20 20 round stretch;
+  border-width: 20px 20px 20px 20px;
+  -webkit-border-radius:20px;-moz-border-radius:20px;
   margin: 0 auto;
   -webkit-box-shadow:0 -2px 15px rgba(0,0,0,.5);  
-  -moz-box-shadow:0 2px 5px rgba(0,0,0,.5);   
+  -moz-box-shadow:0 -2px 15px rgba(0,0,0,.5);   
   position: relative;
   z-index: 10;
 }
@@ -125,9 +130,9 @@ p a:hover {
 }
 
 #contact {
-  width: 300px;
+  width: 290px;
   float: left;
-  padding: 0 10px;
+  padding: 0 20px 0 10px;
 }
 #showcase #spotlight {
   padding: 0 30px;
@@ -152,6 +157,7 @@ p a:hover {
 }
 
 #lower {
+  background-image: url(../images/wood.jpg);	
   border-top: 2px groove #5d4922;
   border-bottom: 2px solid #95bbe3;  
   padding-bottom: 20px; 
@@ -179,7 +185,7 @@ float: left;
   margin: 0 22px;
   width: 250px;
   background: rgba(0,0,0,.6);
-  -webkit-border-radius:10px;-moz-border-radius:20px;
+  -webkit-border-radius:10px;-moz-border-radius:10px;
 border-top: 4px ridge rgba(63,43,8,0.39);
 border-bottom: 2px groove rgba(174,118,30,0.39);
 border-left: 1px solid rgba(174,118,30,0.39);
@@ -211,6 +217,9 @@ a#viewall:hover {
   margin-top: 2px;
   padding: 4px 20px;	
   /*background: rgba(245,241,233,0);*/
+}
+#spotlight .roles {
+  padding: 0;
 }
 
 .roles span {
@@ -247,4 +256,32 @@ a#viewall:hover {
 
 .clear {
   clear: both;
+}
+
+#reactions {
+  margin: 40px auto;
+  width: 960px;
+}
+#reactions h1 {
+  font-size: 40px;
+}
+#reactions p {
+  text-shadow: none;
+  color: #333;
+}
+#reactions a {
+  color: #333;
+  text-shadow: 0 1px 1px rgba(256,256,256,0);  
+  -webkit-transition:text-shadow, .3s;  
+}
+#reactions a:hover {
+  -webkit-transition:text-shadow, .3s;
+  text-shadow: 0 1px 1px rgba(256,256,256,.5);
+  border: none;
+}
+#reactions > div {
+  width: 440px;
+  float: left;
+  margin: 0 20px;
+  text-align: center;
 }

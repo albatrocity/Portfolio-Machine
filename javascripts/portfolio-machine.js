@@ -1,4 +1,6 @@
 var go=true;
+var expand=false;
+
 
 function cycle() {
   if(go) {
@@ -12,6 +14,25 @@ function cycle() {
   time = setTimeout('cycle();', 4000);
 }
 
+
+function expandMachine() {
+  go=false;
+  $('ul.showoff').animate({top:0}, 1000, function() {
+        $('#machine').css('overflow', 'visible');
+  });
+
+  var audioHeight = $('ul.showoff li').outerHeight() * $('#music ul.showoff li').size();
+  var webHeight = $('ul.showoff li').outerHeight() * $('#web ul.showoff li').size();
+  var tallestHeight = Math.max(audioHeight, webHeight);
+  $('.shelf').css('overflow', 'visible').addClass('expanded').animate({height:tallestHeight}, 1000);
+
+  $('#web, #music').animate({height:tallestHeight + $('h2.section').outerHeight() }, 1000);
+  $('#machine').animate({height: tallestHeight + $('h2.section').outerHeight() }, 1000);
+  $('#showcase').scrollFollow({easing: 'easeOutQuad', speed: 300, delay: 50});
+};
+
+
+
 $(function() {
 
   _.each(audio_projects, function (project) { $('#music .shelf .showoff').append(project_template(project)); });
@@ -19,6 +40,8 @@ $(function() {
 
   cycle();
 
+
+  // Pause cycle on item hover
   $('.showoff li').hover(
     function() {
       go=false;
@@ -30,6 +53,8 @@ $(function() {
     }
   );
 
+
+  // Load item when clicked
   $('.showoff li').live('click', function() {
     if (!$(this).hasClass('active')) {
       go=false;
@@ -56,6 +81,8 @@ $(function() {
     }
   });
 
+
+  // Eject item
   $('a#eject').live('click', function() {
     $(this).fadeOut();
     cycle();
@@ -67,19 +94,29 @@ $(function() {
     go=true;
   });
 
+  // Expand machine to view all
   $('#viewall').click(function() {
+    // $(this).attr('id','cycle').text('Cycle');
+    $(this).fadeOut();
+    setTimeout('cycle();', 0);
+    $('.showoff li').stop(true, true);
+    expandMachine();
+    expand=true;
     go=false;
-    var audioHeight = $('ul.showoff li').outerHeight() * $('#music ul.showoff li').size();
-    var webHeight = $('ul.showoff li').outerHeight() * $('#web ul.showoff li').size();
-    var tallestHeight = Math.max(audioHeight, webHeight);
-    $('.shelf').css('overflow', 'visible').addClass('expanded').animate({height:tallestHeight}, 1000);
-    $('#machine').css('overflow', 'visible');
-    $('ul.showoff').animate({top:0}, 1000);
-    $('#web, #music').animate({height:tallestHeight + $('h2.section').outerHeight() }, 1000);    
-    $('#machine').animate({height: tallestHeight + $('h2.section').outerHeight() }, 1000);
-    $('#showcase').scrollFollow({easing: 'easeOutQuad', speed: 300, delay: 50});
     return false
   });
 
+  // // Reset cycle
+  // $('a#cycle').click(function() {
+  //   expand=false;
+  //   // $('#upper').css('overflow', 'hidden').animate({height: 352}, 1000);
+  //   $('.shelf').css('overflow', 'hidden').removeClass('expanded').animate({height:306}, 1000);
+  //   $('#web, #music').animate({height:350}, 1000);
+  //   $('ul.showoff').animate({top: -306}, 1000);
+  //   $('#machine').css('overflow', 'hidden').animate({height: 350}, 1000);
+  //   $('#showcase').scrollFollow({easing: 'easeOutQuad', speed: 300, delay: 50});
+  //   cycle();
+  //   go=true;
+  // });
 
 });

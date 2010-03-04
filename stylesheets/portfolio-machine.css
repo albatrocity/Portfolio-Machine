@@ -1,13 +1,26 @@
+ /*KERNEST.COM WEB FONT CSS GENERATED FOR USE ON whyisrossbrown.com*/ 
+
+ 
+/*Hiran Rufscript 
+http://hiran.kernest.com/fonts/rufscript
+GNU General Public License: http://www.gnu.org/licenses/gpl-2.0.html*/
+ 
+ 
 @font-face {
 	font-family: 'Rufscript';
 	src: url('../fonts/rufscript.eot');
-	src: local(''), url('../fonts/rufscript.woff') format('woff'), url('../fonts/rufscript.ttf') format('truetype'), url('http://kernest.com/embed/rufscript');
+	src: local(''), url('../fonts/rufscript.woff') format('woff'), url('../fonts/rufscript.ttf') format('truetype');
 }
 
+ 
+/*Action Jackson
+http://divide-by-zero.kernest.com/fonts/action-jackson
+GNU General Public License: http://www.gnu.org/licenses/gpl-2.0.html*/
+ 
 @font-face {
 	font-family: 'Action Jackson';
 	src: url('../fonts/action-jackson.eot');
-	src: local(''), url('../fonts/action-jackson.woff') format('woff'), url('../fonts/action-jackson.ttf') format('truetype'), url('http://kernest.com/embed/action-jackson');
+	src: local(''), url('../fonts/action-jackson.woff') format('woff'), url('../fonts/action-jackson.ttf') format('truetype');
 }
 
 #machine {
@@ -17,10 +30,10 @@
   overflow: hidden;
   border-top: 2px ridge #654c18;  
   -webkit-box-shadow:2px 0 2px rgba(0,0,0,.5);
+  -moz-box-shadow:2px 0 2px rgba(0,0,0,.5);  
 }
 
 #web, #music {
-  height: 700px;
   float: left;
   overflow: hidden;  
 }
@@ -83,7 +96,7 @@ ul.showoff span.date {
   font-size: 14px;
 }
 ul.showoff h4{
-  font-family: 'Rufscript';
+  font-family: 'Rufscript', 'Marker Felt', 'Times New Roman', 'serif';
   margin: 0;
   font-size: 20px;
   line-height: 1.1em;
@@ -93,6 +106,9 @@ ul.showoff h4{
 
 #spotlight img.preview {
   text-align: center;
+  margin: 0 auto;
+  display: block;
+  -webkit-box-shadow:0 2px 5px rgba(0,0,0,.5);
 }
 
 a#eject {
@@ -107,7 +123,7 @@ a#eject {
   margin: 0 auto -70px auto;
   width: 200px;
   height: 22px;
-  font-family: 'Rufscript';
+  font-family: 'Rufscript', 'Marker Felt', 'Times New Roman', 'serif';
   color: #fff;
   text-decoration: none;
 }
