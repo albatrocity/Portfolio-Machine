@@ -1,5 +1,6 @@
 var project_template = _.template(
-              "<li id='<%= css %>'>" +
+            "<a href='#/<%= css %>' class='project_link' id='<%= css %>'>" +
+              "<li>" +
                 // "<img class='preview' src='<%= image %>' alt='<%= name %>' title='<%= name %>' />" +
                 "<div class='details'>" +
                   "<h4><%= name %></h4>" +
@@ -9,7 +10,8 @@ var project_template = _.template(
                     "<%= _.reduce(roles, '', function (memo, role) {return memo + '<span class=\"' + role[0] + '\">' + role[1] + '</span>'}) %>" +
                   "</div>" +                  
                 "<br class='clear'/>" +
-                "</li>")
+                "</li>" +
+              "</a>")
                 
 var project_details_template = _.template(
                 "<h2><a href='<%= url %>'><%= name %></a></h2>" +  
