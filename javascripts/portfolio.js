@@ -69,7 +69,7 @@ var web_projects = [
     description: "<p>A website for the web development company <a href='http://guitsaru.com'>Matt Pruitt</a> and I own and operate. I am responsible for all design, art, and front-end development. Branding by <a href='http://myassociatecornelius.com'>A. Micah Smith</a>.</p>"
   },
   {
-    css: 'rossisbrown.com',
+    css: 'rossisbrown',
     name: 'rossisbrown.com',
     url: 'http://rossisbrown.com',
     date: '2009',
