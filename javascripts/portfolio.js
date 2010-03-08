@@ -1,5 +1,15 @@
 var audio_projects = [
   {
+    css: 'twenty_two',
+    name: 'Twenty Two - Doby Watson',
+    url: 'http://http://www.orchidcollective.com/catalog/ocr011/',
+    date: '2009',
+    roles: [['TE', 'Tracking Engineer'], ['ME', 'Mix Engineer']],
+    image: "images/portfolio/twenty_two.jpg",
+    description: '<p>Recorded live at home.</p>'
+  },
+
+  {
     css: 'five',
     name: '5 - The Sailor Sequence',
     url: 'http://thesailorsequence.com',
@@ -38,6 +48,15 @@ var audio_projects = [
 ]
 
 var web_projects = [
+{
+  css: 'whyisrossbrown',
+  name: 'Why is Ross Brown?',
+  url: 'http://whyisrossbrown.com',
+  date: '2010',
+  roles: [['D', 'Designer'], ['A', 'Art'], ['F', 'Front End Developer']],
+  image: "images/portfolio/whyisrossbrown.jpg",
+  description: "<p>You're on this site currently. That's like looking at a picture of someone holding that same picture.</p>"
+},
   {
     css: 'ruby_midwest',
     name: 'Ruby Midwest 2010',
@@ -46,7 +65,6 @@ var web_projects = [
     roles: [['D', 'Designer'], ['A', 'Art'], ['F', 'Front End Developer']],
     image: "images/portfolio/ruby_midwest.png",
     description: "<p>A compact site for the 2010 Ruby Midwest conference. The site design, most contruction, and branding are my handiwork.</p>"
-  
   },
 
   {
@@ -73,7 +91,7 @@ var web_projects = [
     name: 'rossisbrown.com',
     url: 'http://rossisbrown.com',
     date: '2009',
-    roles: [['D', 'Designer'], ['F', 'Front End Developer']],
+    roles: [['D', 'Designer'], ['A', 'Art'], ['F', 'Front End Developer']],
     image: "images/portfolio/rossisbrown.png",
     description: "<p>A <a href='http://chyrp.net'>Chyrp</a>-based blog with a custom theme. A place for me to ramble.</p>"
   },  
