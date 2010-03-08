@@ -4,11 +4,12 @@ by "Ross Brown":http://rossisbrown.com
 
 An undocumented CSS3-littered explosion of awesome. Portfolio Machine is a rotating shelf that displays portfolio items, allowing you to select an item for a more detailed view. It does this by harnessing the power of VHS tapes. And jQuery.
 
-Portfolio items are generated from portfolio.js and placed in index.html with underscore.js's templating function.
+Portfolio items are generated from portfolio.js and placed in index.html with underscore.js's templating function. Paging and back button functionality made possible with sammy.js and "guitsaru's":http://github.com/guitsaru implementation of it.
 
 jQuery plugins used:
 
 * "underscore":http://documentcloud.github.com/underscore/
+* "sammy":http://code.quirkey.com/sammy/
 * "easing":http://gsgd.co.uk/sandbox/jquery/easing/
 * "scrollfollow":http://kitchen.net-perspective.com/
 * "defuscate":http://www.ia-stud.hiof.no/~joakims/projects/defuscator/
