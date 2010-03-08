@@ -67,6 +67,10 @@ h2.section {
   overflow: hidden;
 }
 
+ul.showoff a {
+  text-decoration: none;
+}
+
 ul.showoff li {
   list-style: none;
   margin: 0;
