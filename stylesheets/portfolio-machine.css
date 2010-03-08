@@ -78,6 +78,11 @@ ul.showoff li {
   -webkit-box-shadow:0 0 8px rgba(0,0,0,.6);  
  -moz-box-shadow: #000 0 0 8px;  
 }
+
+ul.showoff a.project_link {
+  display: block;
+}
+
 ul.showoff img.preview {
   width: 100px;
   /*float: left;*/
@@ -117,7 +122,8 @@ a#eject {
   overflow: hidden;
   font-size: 18px;
   padding: 20px 30px;
-  -webkit-border-radius:10px;  -moz-border-radius: 10px;
+  -webkit-border-radius:10px;
+  -moz-border-radius: 10px;
   display: block;
   position: relative;
   margin: 0 auto -70px auto;
