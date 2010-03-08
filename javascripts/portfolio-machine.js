@@ -56,7 +56,8 @@ $(function() {
         $('.showoff a.active .details').animate({left: 0}, 500).parent().parent('a').removeClass('active');
         $('#screen').fadeOut(300);
         $('#spotlight').fadeOut();
-        go=true;
+        if ($('.shelf').hasClass('expanded')) 
+          {go=false;} else {go=true;}
       }
       cycle();
     });
