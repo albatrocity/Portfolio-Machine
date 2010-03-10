@@ -85,6 +85,7 @@ ul.showoff li {
 
 ul.showoff a.project_link {
   display: block;
+  cursor: pointer;
 }
 
 ul.showoff img.preview {
@@ -136,6 +137,7 @@ a#eject {
   font-family: 'Rufscript', 'Marker Felt', 'Times New Roman', 'serif';
   color: #fff;
   text-decoration: none;
+  cursor: pointer;
 }
 
 br.clear {

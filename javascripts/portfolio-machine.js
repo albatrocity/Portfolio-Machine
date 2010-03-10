@@ -76,12 +76,13 @@ $(function() {
       var link = $('#' + this.params['project']);
       var link_parent = link.parent().parent().parent().attr('id')
       if (!link.hasClass('active')) {
-        if (link[0] == $('#' + link_parent + ' .showoff .project_link:first-child')[0]){
-          $('#' + link_parent + ' .showoff .project_link:nth-child(2)').insertBefore(link);
-        } else if (link[0] != $('#' + link_parent + ' .showoff .project_link:nth-child(2)')[0] && link[0] != $('#' + link_parent + ' .showoff .project_link:nth-child(3)')[0]) {
-          link.insertAfter('#' + link_parent + ' .showoff .project_link:first-child');
+        if (!$('ul.showoff').parent('.shelf').hasClass('expanded')) {
+          if (link[0] == $('#' + link_parent + ' .showoff .project_link:first-child')[0]){
+            $('#' + link_parent + ' .showoff .project_link:nth-child(2)').insertBefore(link);
+          } else if (link[0] != $('#' + link_parent + ' .showoff .project_link:nth-child(2)')[0] && link[0] != $('#' + link_parent + ' .showoff .project_link:nth-child(3)')[0]) {
+            link.insertAfter('#' + link_parent + ' .showoff .project_link:first-child');
+          }
         }
-
         $('a#eject').fadeOut();
         $('#screen').fadeIn(600);
         if (time) {
