@@ -15,7 +15,7 @@ var project_template = _.template(
                 
 var project_details_template = _.template(
                 "<h2><a href='<%= url %>'><%= name %></a></h2>" +  
-                "<img class='preview' src='<%= image %>' alt='<%= name %>' title='<%= name %>' />" +
+                "<a href='<%= url %>'><img class='preview' src='<%= image %>' alt='<%= name %>' title='<%= name %>' /></a>" +
                 "<span class='date'><%= date %></span>" +
                 "<div class='description'><%= description %></div>" +
                 "<div class='roles'>" +

@@ -2,11 +2,21 @@ var audio_projects = [
   {
     css: 'twenty_two',
     name: 'Twenty Two - Doby Watson',
-    url: 'http://http://www.orchidcollective.com/catalog/ocr011/',
+    url: 'http://www.orchidcollective.com/catalog/ocr011/',
     date: '2009',
     roles: [['TE', 'Tracking Engineer'], ['ME', 'Mix Engineer']],
     image: "images/portfolio/twenty_two.jpg",
     description: '<p>Recorded live at home.</p>'
+  },
+  
+  {
+    css: 'lila_rasa',
+    name: 'Lila Rasa - Matt Dill',
+    url: 'http://www.myspace.com/mattdill',
+    date: '2009',
+    roles: [['ME', 'Mix Engineer']],
+    image: "images/portfolio/lila_rasa.jpg",
+    description: '<p>Mixed and Mastered with Matt at home.</p>'
   },
 
   {
@@ -48,6 +58,16 @@ var audio_projects = [
 ]
 
 var web_projects = [
+{
+  css: 'winterfresh',
+  name: 'Winterfresh Mint Style',
+  url: 'http://www.haveamint.com/peppermill/other/101/winterfresh/',
+  date: '2010',
+  roles: [['D', 'Designer'], ['A', 'Art'], ['F', 'Front End Developer']],
+  image: "images/portfolio/winterfresh.jpg",
+  description: "<p>A style I developed for <a href='http://haveamint.com'>Mint</a>. Slick as snot.</p>"
+},
+
 {
   css: 'whyisrossbrown',
   name: 'Why is Ross Brown?',
