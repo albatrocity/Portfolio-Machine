@@ -4,9 +4,9 @@ var audio_projects = [
     name: 'Twenty Two - Doby Watson',
     url: 'http://www.orchidcollective.com/catalog/ocr011/',
     date: '2009',
-    roles: [['TE', 'Tracking Engineer'], ['ME', 'Mix Engineer']],
+    roles: [['TE', 'Tracking Engineer'], ['ME', 'Mix Engineer'], ['M', 'Musician']],
     image: "images/portfolio/twenty_two.jpg",
-    description: '<p>Recorded live at home.</p>'
+    description: '<p>Recorded live at home. I sang background vocals on tracks 1 and 6.</p>'
   },
   
   {

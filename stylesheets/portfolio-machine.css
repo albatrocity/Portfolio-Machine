@@ -8,7 +8,7 @@ GNU General Public License: http://www.gnu.org/licenses/gpl-2.0.html*/
  
 @font-face {
 	font-family: 'Rufscript';
-	src: url('../fonts/rufscript.eot');
+	src: url('../fonts/rufscript.eot'), url('http://kernest.com/embed/rufscript#rufscript010') format('svg');
 	src: local(''), url('../fonts/rufscript.woff') format('woff'), url('../fonts/rufscript.ttf') format('truetype');
 }
 
@@ -19,7 +19,7 @@ GNU General Public License: http://www.gnu.org/licenses/gpl-2.0.html*/
  
 @font-face {
 	font-family: 'Action Jackson';
-	src: url('../fonts/action-jackson.eot');
+	src: url('../fonts/action-jackson.eot'), url('http://kernest.com/embed/action-jackson#actionjackson') format('svg');
 	src: local(''), url('../fonts/action-jackson.woff') format('woff'), url('../fonts/action-jackson.ttf') format('truetype');
 }
 
